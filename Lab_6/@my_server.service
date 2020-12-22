@@ -1,0 +1,11 @@
+[Unit]
+Description=MyServer
+After=syslog.target
+
+[Service]
+Type=forking
+ExecStart=/mnt/c/Универ/ОС/OS-master/Lab_4/server 8080 /mnt/c/Универ/ОС/OS-master/Lab_4/file_manager
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
